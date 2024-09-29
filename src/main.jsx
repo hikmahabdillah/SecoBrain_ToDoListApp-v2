@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
 import ThemeContextProvider from './context/themeContext.jsx';
+import OnBoardingPage from './OnBoardingPage.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,7 +12,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        {/* <Route path="/detail-recipes/:id" element={<DetailRecipes />} /> */}
+        <Route path="/getStarted" element={<OnBoardingPage />} />
       </Routes>
     </BrowserRouter>
     </ThemeContextProvider>

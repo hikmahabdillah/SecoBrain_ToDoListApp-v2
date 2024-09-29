@@ -8,6 +8,13 @@
   font-weight: 400;
 }
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
