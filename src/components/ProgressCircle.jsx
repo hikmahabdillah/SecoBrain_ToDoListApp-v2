@@ -33,7 +33,7 @@ const ProgressCircle = ({percentage}) => {
       />
     </svg>
     {/* <!-- Percentage text in the middle --> */}
-    <div className="absolute text-xl font-bold text-blue-600">67%</div>
+    <div className="absolute text-xl font-bold text-blue-600">{percentage}%</div>
   </div>
   )
 }

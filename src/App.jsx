@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import ProgressCard from "./components/ProgressCard";
 import Quotes from "./components/Quotes";
+import RoutinesSection from "./components/RoutinesSection";
 import { ThemeType } from "./context/themeContext";
 import { useContext, useEffect } from "react";
 
@@ -26,6 +27,7 @@ function App() {
           <Quotes/>
           <ProgressCard/> 
         </div>
+        <RoutinesSection/>
       </div>
     </>
   );
