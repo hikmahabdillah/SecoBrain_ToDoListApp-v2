@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .active-tabs{
+    @apply text-[#0A26AE] pb-2 font-bold border-b-2 border-b-[#0A26AE];
+  }
+  .deactive-tabs{
+    @apply text-neutral-400 pb-2 font-medium border-b-2 border-b-transparent;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -1,7 +1,5 @@
-import Header from "./components/Header";
-import ProgressCard from "./components/ProgressCard";
-import Quotes from "./components/Quotes";
-import RoutinesSection from "./components/RoutinesSection";
+import MainContent from "./components/layout/MainContent";
+import MainHeader from "./components/layout/MainHeader";
 import { ThemeType } from "./context/themeContext";
 import { useContext, useEffect } from "react";
 
@@ -22,12 +20,8 @@ function App() {
   return (
     <>
       <div className="bg-slate-50 py-8 px-5 w-full max-w-3xl container mx-auto">
-        <Header />
-        <div className="main-header text-left my-7 space-y-5 px-1 sm:px-8"> 
-          <Quotes/>
-          <ProgressCard/> 
-        </div>
-        <RoutinesSection/>
+        <MainHeader/>
+        <MainContent/>
       </div>
     </>
   );

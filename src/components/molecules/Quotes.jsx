@@ -1,4 +1,4 @@
-import TextGradient from "./TextGradient";
+import TextGradient from "../molecules/TextGradient";
 
 const Quotes = () => {
   return(
