@@ -1,5 +1,6 @@
 import MainContent from "./components/layout/MainContent";
 import MainHeader from "./components/layout/MainHeader";
+import AddTaskBtn from "./components/molecules/AddTaskBtn";
 import { ThemeType } from "./context/themeContext";
 import { useContext, useEffect } from "react";
 
@@ -22,6 +23,7 @@ function App() {
       <div className="bg-slate-50 py-8 px-5 w-full max-w-3xl container mx-auto">
         <MainHeader/>
         <MainContent/>
+        <AddTaskBtn/>
       </div>
     </>
   );
