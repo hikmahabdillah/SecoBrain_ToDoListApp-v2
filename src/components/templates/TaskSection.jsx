@@ -6,9 +6,9 @@ const TaskSection = () => {
   return (
     <section id="task" className="w-full flex flex-col gap-5">
       <TaskHeader/>
-      <TaskContent/>
+      <TaskContent isToday={true}/>
       <HeadPerSection>Next Day</HeadPerSection>
-      <TaskContent/>
+      <TaskContent isToday={false}/>
     </section>
   )
 }

@@ -1,15 +1,15 @@
 import TaskAndTime from "./TaskAndTime";
 
-const TaskContent = () => {
+const TaskContent = ({isToday}) => {
   const tasksList = [];
 
-  for (let i = 1; i <= 5; i++) {
-    tasksList.push(<TaskAndTime key={i} />);
+  for (let i = 1; i <= 3; i++) {
+    tasksList.push(<TaskAndTime isToday={isToday} key={i} />);
   }
   return (
-    <div className="task-content p-2 max-h-[300px] h-full overflow-auto relative">
+    <div className={`task-content p-2 ${isToday ? "max-h-[500px]" : "max-h-[350px]" } h-full overflow-auto relative`}>
     {/* <div className="gradient-overlay" /> */}
-      <ol className="relative border-s border-gray-300 ">
+      <ol className={`relative ${isToday && "border-s"} border-gray-300`}>
         {tasksList}
       </ol>
     </div>

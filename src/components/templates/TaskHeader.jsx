@@ -9,18 +9,18 @@ const TaskHeader = () => {
         <TaskBadge
           iconName={"../../taskComplete.svg"}
           numOfTasks={4}
-          width="50px"
+          width="40px"
         />
       </div>
       <div className="flex justify-between items-center gap-4">
         <TaskBadge
           iconName={"../../taskInCompleted.svg"}
-          width="35px"
+          width="25px"
           numOfTasks={3}
         />
         <div className="flex items-center gap-4 [&>span]:duration-300 [&>span]:cursor-pointer">
-          <span className="active-tabs">Completed</span>
-          <span className="deactive-tabs">Incompleted</span>
+          <span className="active-tabs">Incompleted</span>
+          <span className="deactive-tabs">Completed</span>
         </div>
       </div>
     </div>

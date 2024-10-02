@@ -3,7 +3,7 @@ const TaskCard = () => {
     <div className="mt-2 flex items-center justify-between py-3 px-5 rounded-lg border gap-5 border-neutral-300 text-neutral-800 cursor-pointer">
       <div className="task-content leading-none">
         <h2 className="font-poppins font-semibold text-lg">Workout</h2>
-        <p className="font-poppins font-medium text-sm">Lorem ipsum dolor sit amet</p>
+        <p className="font-poppins text-sm">Lorem ipsum dolor sit amet</p>
       </div>
       <input
         id="1"
