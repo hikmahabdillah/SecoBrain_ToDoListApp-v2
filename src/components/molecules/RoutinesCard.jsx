@@ -1,6 +1,6 @@
 const RoutinesCard = ({ id }) => {
   return (
-    <span className="px-4 py-3 border border-neutral-300 rounded-lg flex items-center [&>*]:cursor-pointer">
+    <span className="px-4 py-3 border border-neutral-300 rounded-lg flex items-center [&>*]:cursor-pointer w-max max-w-[220px]">
       <input
         id={`routines-${id}`}
         type="checkbox"
@@ -10,7 +10,7 @@ const RoutinesCard = ({ id }) => {
         htmlFor={`routines-${id}`}
         className="ml-2 font-poppins text-md font-semibold text-gray-900"
       >
-        Workout
+        Just Workout
       </label>
     </span>
   );
