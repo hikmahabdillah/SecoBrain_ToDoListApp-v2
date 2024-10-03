@@ -25,7 +25,7 @@ function App() {
         <MainHeader/>
         <MainContent/>
         <AddTaskBtn/>
-        <PopupConfirm isDanger={false} type={"notifications"}/> 
+        {/* <PopupConfirm isDanger={false} type={"notifications"}/>  */}
         {/* type : task, alltasks, notifications, routines */}
       </div>
     </>
