@@ -1,7 +1,8 @@
 import MainContent from "./components/layout/MainContent";
 import MainHeader from "./components/layout/MainHeader";
 import AddTaskBtn from "./components/molecules/AddTaskBtn";
-import PopupConfirm from "./components/templates/PopupConfirm";
+import DateBtn from "./components/molecules/DateBtn";
+// import PopupConfirm from "./components/templates/PopupConfirm";
 import { ThemeType } from "./context/themeContext";
 import { useContext, useEffect } from "react";
 
@@ -27,6 +28,8 @@ function App() {
         <AddTaskBtn/>
         {/* <PopupConfirm isDanger={false} type={"notifications"}/>  */}
         {/* type : task, alltasks, notifications, routines */}
+        <DateBtn/>
+        {/* <div id="datepicker-inline" inline-datepicker data-date="02/25/2024"/> */}
       </div>
     </>
   );
