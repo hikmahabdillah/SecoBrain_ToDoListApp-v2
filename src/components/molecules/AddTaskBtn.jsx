@@ -8,7 +8,7 @@ const AddTaskBtn = () => {
   };
 
   return (
-    <div data-dial-init className="fixed right-6 bottom-20 group">
+    <div data-dial-init className="fixed right-6 bottom-20 group z-10">
       {/* Menu Buttons */}
       <div
         id="speed-dial-menu-text-outside-button"

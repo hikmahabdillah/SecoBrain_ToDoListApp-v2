@@ -1,6 +1,7 @@
 import MainContent from "./components/layout/MainContent";
 import MainHeader from "./components/layout/MainHeader";
 import AddTaskBtn from "./components/molecules/AddTaskBtn";
+import PopupConfirm from "./components/templates/PopupConfirm";
 import { ThemeType } from "./context/themeContext";
 import { useContext, useEffect } from "react";
 
@@ -24,6 +25,8 @@ function App() {
         <MainHeader/>
         <MainContent/>
         <AddTaskBtn/>
+        <PopupConfirm isDanger={false} type={"notifications"}/> 
+        {/* type : task, alltasks, notifications, routines */}
       </div>
     </>
   );
